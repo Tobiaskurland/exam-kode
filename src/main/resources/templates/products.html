@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Produkter</title>
+</head>
+<body>
+
+<h2>Produkter</h2>
+<p th:each="Produkter : ${produkter}">
+    <span th:text="${Produkter.name}"/>
+    <span th:text="${Produkter.stack}"/>
+    <span th:text="${Produkter.price}"/>
+    <span th:text="${Produkter.description}"/>
+
+</p>
+
+</body>
+</html>
